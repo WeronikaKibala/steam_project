@@ -15,7 +15,9 @@
     <script src="https://kit.fontawesome.com/ebb86bf076.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/font-awesome.css">
 
-    <link rel="stylesheet" href="./styles/main.css">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"/>
 
 
 </head>
@@ -51,8 +53,9 @@
         <div class="container">
             <div class="columns-container columns-2-container">
                 <div class="columns about-image">
-                    <img src="images/received_392220988655113.jpeg" 
-                    alt="figura" >
+                    
+                    <img src="{{url_for('static', filename='images/received_392220988655113.jpeg')}}" alt="figura">
+                    
                 </div>
                 <div class="columns">
                     <h2>O mnie</h2>
@@ -119,7 +122,8 @@
                
                 <div class="column photos-section">
                     <figure>
-                        <img src="images/pexels-roman-odintsov-6588374.jpg" alt="ciasto1" >
+                        
+                        <img src="{{url_for('static', filename='images/pexels-roman-odintsov-6588374.jpg')}}" alt="ciasto1">
                         <figcaption class="figcaption">
                             Zdjęcie autorstwa <strong>Roman Odintsov</strong>
                             ze strony <strong>pexels.com</strong>
@@ -128,7 +132,8 @@
                 </div>
                 <div class="column photos-section">
                     <figure>
-                        <img src="images/pexels-roman-odintsov-6588378.jpg" alt="ciasto2" >
+                        <img src="{{url_for('static', filename='images/pexels-roman-odintsov-6588378.jpg')}}" alt="ciasto2" >
+                        
                         <figcaption class="figcaption">
                             Zdjęcie autorstwa <strong>Roman Odintsov</strong>
                             ze strony <strong>pexels.com</strong>
@@ -137,7 +142,7 @@
                 </div>
                 <div class="column photos-section">
                     <figure>
-                        <img src="images/pexels-roman-odintsov-6588377.jpg" alt="ciasto3" >
+                        <img src="{{url_for('static', filename='images/pexels-roman-odintsov-6588377.jpg')}}" alt="ciasto3" >
                         <figcaption class="figcaption">
                             Zdjęcie autorstwa <strong>Roman Odinstov</strong>
                             ze strony <strong>pexels.com</strong>
@@ -146,7 +151,7 @@
                 </div>
                 <div class="column photos-section">
                     <figure>
-                        <img src="images/pexels-roman-odintsov-6588380.jpg" alt="ciasto4" >
+                        <img src="{{url_for('static', filename='images/pexels-roman-odintsov-6588380.jpg')}}" alt="ciasto4" >
                         <figcaption class="figcaption">
                             Zdjęcie autorstwa <strong>Roman Odinstov</strong>
                             ze strony <strong>pexels.com</strong>
@@ -155,7 +160,7 @@
                 </div>
                 <div class="column photos-section">
                     <figure>
-                        <img src="images/pexels-roman-odintsov-6588383.jpg" alt="ciasto5" >
+                        <img src="{{url_for('static', filename='images/pexels-roman-odintsov-6588383.jpg')}}" alt="ciasto5" >
                         <figcaption class="figcaption">
                             Zdjęcie autorstwa <strong>Roman Odinstov</strong>
                             ze strony <strong>pexels.com</strong>
@@ -164,7 +169,7 @@
                 </div>
                 <div class="column photos-section">
                     <figure>
-                        <img src="images/pexels-roman-odintsov-6588387.jpg" alt="ciasto6" >
+                        <img src="{{url_for('static', filename='images/pexels-roman-odintsov-6588387.jpg')}}" alt="ciasto6" >
                         <figcaption class="figcaption">
                             Zdjęcie autorstwa <strong>Roman Odinstov</strong>
                             ze strony <strong>pexels.com</strong>
@@ -224,7 +229,8 @@
             </div>
         </div>
     </footer>
-<script src="./styles/script.js"></script>
+
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
 </body>
 
 </html>
